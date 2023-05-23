@@ -1,0 +1,38 @@
+ #div  {
+  z-index:3;
+  
+  display:true;
+  position:fixed;
+  top: 97%;
+  right:10px;
+  transform: translate(-50%,-50%);
+  
+}
+
+#container {
+  width: 95px;
+  height: 95px;
+}
+
+@keyframes animation {
+  0% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -105;
+  }
+  50% {
+    stroke-dasharray: 40 5;
+    stroke-dashoffset: -160;
+  }
+  100% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -300;
+  }
+}
+#spinner {
+  transform-origin: center;
+  animation-name: animation;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier;
+  animation-iteration-count: infinite;
+}
+
